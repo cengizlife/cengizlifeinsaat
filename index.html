@@ -2,53 +2,73 @@
 <html>
 <head>
 <title>Cengiz Life İnşaat</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
 body{
-font-family: Arial;
 margin:0;
-background:#f2f2f2;
+font-family:Arial;
+background:#f4f4f4;
+}
+
+nav{
+background:#111;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-size:18px;
 }
 
 header{
-background:#111;
-color:white;
-padding:25px;
-text-align:center;
-font-size:26px;
-}
-
-.hero{
-height:300px;
-background-image:url("IMG_20260216_120711.jpg");
+height:400px;
+background:url("IMG_20260216_120711.jpg");
 background-size:cover;
 background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:40px;
+font-weight:bold;
 }
 
 .section{
-padding:30px;
+padding:40px;
 text-align:center;
 }
 
 .gallery{
 display:flex;
-flex-wrap:wrap;
-justify-content:center;
+flex-direction:column;
+align-items:center;
 gap:20px;
 }
 
 .gallery img{
-width:300px;
+width:90%;
+max-width:700px;
 border-radius:10px;
+}
+
+.sold{
+color:red;
+font-size:24px;
+font-weight:bold;
+margin-bottom:30px;
 }
 
 button{
 background:#25D366;
 color:white;
 border:none;
-padding:15px 25px;
+padding:15px 30px;
 font-size:18px;
 border-radius:6px;
 }
@@ -66,11 +86,15 @@ margin-top:40px;
 
 <body>
 
+<nav>
+<a href="#">Ana Sayfa</a>
+<a href="#">Projeler</a>
+<a href="#">İletişim</a>
+</nav>
+
 <header>
 CENGİZ LIFE İNŞAAT
 </header>
-
-<div class="hero"></div>
 
 <div class="section">
 
@@ -87,10 +111,16 @@ Cengiz Life İnşaat olarak modern ve sağlam yapılar inşa ediyoruz.
 
 <h2>Projelerimiz</h2>
 
+<p class="sold">
+Bu projedeki tüm dairelerimiz satılmıştır.
+</p>
+
 <div class="gallery">
 
 <img src="IMG_20260216_120711.jpg">
+
 <img src="IMG_20260216_120713.jpg">
+
 <img src="IMG_20260216_120720.jpg">
 
 </div>
@@ -101,9 +131,11 @@ Cengiz Life İnşaat olarak modern ve sağlam yapılar inşa ediyoruz.
 
 <h2>İletişim</h2>
 
-<p>Telefon: 0554 229 77 55</p>
-<p>Telefon: 0501 001 15 51</p>
-<p>Niğde Merkez</p>
+<p>📞 0554 229 77 55</p>
+
+<p>📞 0501 001 15 51</p>
+
+<p>📍 Niğde Merkez</p>
 
 <br>
 
@@ -114,7 +146,7 @@ Cengiz Life İnşaat olarak modern ve sağlam yapılar inşa ediyoruz.
 <br><br>
 
 <a href="https://www.instagram.com/cengizlife51">
-Instagram
+Instagram Sayfamız
 </a>
 
 </div>
