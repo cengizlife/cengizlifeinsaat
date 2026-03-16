@@ -3,10 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Cengiz Life İnşaat Niğde</title>
-
-<meta name="description" content="Cengiz Life İnşaat Niğde merkezde modern ve sağlam konut projeleri üretir.">
+<title>Cengiz Life İnşaat</title>
 
 <style>
 
@@ -14,72 +11,106 @@ body{
 margin:0;
 font-family:Arial;
 background:black;
-color:gold;
+color:#d4af37;
 text-align:center;
 }
 
 header{
 padding:20px;
+border-bottom:2px solid #d4af37;
 }
 
-header img{
-width:150px;
+.logo{
+width:120px;
 }
 
 nav{
-border-top:2px solid gold;
-border-bottom:2px solid gold;
-padding:15px;
+margin-top:10px;
 }
 
 nav a{
-color:gold;
+color:#d4af37;
 margin:15px;
 text-decoration:none;
 font-size:18px;
 }
 
-section{
+.hero{
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:45px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+.section{
 padding:60px 20px;
 }
 
-h1{
-font-size:42px;
+.section h2{
+font-size:35px;
+margin-bottom:20px;
 }
 
-h2{
-font-size:32px;
-}
-
-.projeler img{
-width:90%;
-max-width:500px;
-margin:20px;
-border:3px solid gold;
+.projects img{
+width:80%;
+max-width:400px;
+margin:10px;
 border-radius:10px;
+border:3px solid #d4af37;
 }
 
-.satildi{
-font-size:26px;
+.sold{
 color:red;
-margin-top:20px;
+font-size:22px;
+margin-top:10px;
+}
+
+.buttons{
+margin-top:30px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+margin:10px;
+background:#d4af37;
+color:black;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+footer{
+padding:30px;
+border-top:1px solid #d4af37;
+margin-top:40px;
+font-size:14px;
 }
 
 .whatsapp{
 position:fixed;
 bottom:20px;
 right:20px;
-background:gold;
+background:#d4af37;
 color:black;
 padding:15px 25px;
 border-radius:30px;
-font-size:18px;
+font-weight:bold;
 text-decoration:none;
 }
 
-footer{
-border-top:2px solid gold;
-padding:40px 20px;
+iframe{
+width:90%;
+height:300px;
+border:0;
+margin-top:20px;
+border-radius:10px;
 }
 
 </style>
@@ -89,88 +120,76 @@ padding:40px 20px;
 
 <header>
 
-<img src="logo.jpg">
+<img src="logo.jpg" class="logo">
+
+<nav>
+<a href="#">Ana Sayfa</a>
+<a href="#projeler">Projeler</a>
+<a href="#iletisim">İletişim</a>
+</nav>
 
 </header>
 
-<nav>
-
-<a href="#">Ana Sayfa</a>
-
-<a href="#projeler">Projeler</a>
-
-<a href="#iletisim">İletişim</a>
-
-</nav>
-
-<section>
+<section class="hero">
 
 <h1>CENGİZ LIFE İNŞAAT</h1>
 
 <p>Niğde merkezde modern ve sağlam konut projeleri</p>
 
+<div class="buttons">
+
+<a class="btn" href="tel:+905000000000">Telefon</a>
+
+<a class="btn" href="https://instagram.com/cengizlife51">Instagram</a>
+
+</div>
+
 </section>
 
-<section>
+<section class="section">
 
 <h2>Hakkımızda</h2>
 
 <p>
-Cengiz Life İnşaat olarak Niğde merkezde modern mimari,
-sağlam yapı ve kaliteli yaşam alanları inşa ediyoruz.
+
+Cengiz Life İnşaat olarak Niğde merkezde modern mimari, sağlam yapı ve kaliteli yaşam alanları inşa ediyoruz.
+
 </p>
 
 </section>
 
-<section id="projeler">
+<section class="section projects" id="projeler">
 
 <h2>Projelerimiz</h2>
 
-<div class="projeler">
-
 <img src="proje1.jpg">
-
 <img src="proje2.jpg">
-
 <img src="proje3.jpg">
 
-</div>
+<div class="sold">
 
-<div class="satildi">
-
-Bu projedeki dairelerimizin tamamı satılmıştır.
+Bu projedeki dairelerimizin tamamı satılmıştır
 
 </div>
 
 </section>
 
-<section id="iletisim">
+<section class="section" id="iletisim">
 
-<h2>İletişim</h2>
+<h2>Konum</h2>
 
-<p>📞 0554 229 77 55</p>
-
-<p>📞 0501 001 15 51</p>
-
-<p>📍 Niğde Merkez</p>
-
-<p>
-📷 Instagram  
-<br>
-<a href="https://instagram.com/cengizlife51" style="color:gold">
-cengizlife51
-</a>
-</p>
+<iframe src="https://maps.google.com/maps?q=Niğde&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
 
 </section>
 
 <footer>
 
-<p>© 2025 Cengiz Life İnşaat</p>
+© 2025 Cengiz Life İnşaat  
+Niğde / Türkiye
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/905542297755">
+<a class="whatsapp" href="https://wa.me/905000000000">
 
 WhatsApp
 
