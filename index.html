@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cengiz Life İnşaat</title>
+
+<title>CENGİZ LIFE İNŞAAT</title>
 
 <style>
 
@@ -11,109 +13,152 @@ body{
 margin:0;
 font-family:Arial;
 background:black;
-color:#d4af37;
+color:white;
 text-align:center;
 }
 
 header{
-padding:20px;
-border-bottom:2px solid #d4af37;
+padding:40px 20px;
 }
 
 .logo{
-width:120px;
+width:160px;
 }
 
-nav{
+h1{
+color:gold;
 margin-top:10px;
 }
 
-nav a{
-color:#d4af37;
-margin:15px;
-text-decoration:none;
-font-size:18px;
-}
+/* DURUM */
 
-.hero{
-padding:80px 20px;
-}
-
-.hero h1{
-font-size:45px;
-margin-bottom:10px;
-}
-
-.hero p{
-font-size:20px;
-}
-
-.section{
-padding:60px 20px;
-}
-
-.section h2{
-font-size:35px;
-margin-bottom:20px;
-}
-
-.projects img{
-width:80%;
-max-width:400px;
-margin:10px;
-border-radius:10px;
-border:3px solid #d4af37;
+.project-status{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:20px;
 }
 
 .sold{
+border:2px solid red;
 color:red;
-font-size:22px;
-margin-top:10px;
+padding:10px 20px;
+border-radius:10px;
 }
 
-.buttons{
-margin-top:30px;
+.coming{
+border:2px solid gold;
+color:gold;
+padding:10px 20px;
+border-radius:10px;
 }
 
-.btn{
-display:inline-block;
-padding:12px 25px;
-margin:10px;
-background:#d4af37;
-color:black;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-}
+/* SLIDER */
 
-footer{
-padding:30px;
-border-top:1px solid #d4af37;
+.slider{
+width:100%;
+overflow:hidden;
 margin-top:40px;
-font-size:14px;
 }
 
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#d4af37;
-color:black;
-padding:15px 25px;
-border-radius:30px;
-font-weight:bold;
-text-decoration:none;
+.slides{
+display:flex;
+animation:slide 15s infinite;
+}
+
+.slides img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+
+@keyframes slide{
+
+0%{transform:translateX(0)}
+
+33%{transform:translateX(-100%)}
+
+66%{transform:translateX(-200%)}
+
+}
+
+/* GALERİ */
+
+.gallery{
+padding:40px 20px;
+}
+
+.gallery h2{
+color:gold;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+margin-top:20px;
+}
+
+.gallery-grid img{
+width:100%;
+border-radius:10px;
+}
+
+/* HARITA */
+
+.map{
+margin:40px 0;
 }
 
 iframe{
 width:90%;
 height:300px;
 border:0;
-margin-top:20px;
 border-radius:10px;
 }
 
+/* BUTTONLAR */
+
+.buttons{
+margin:30px 0;
+}
+
+.btn{
+display:inline-block;
+margin:10px;
+padding:12px 25px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.whatsapp{
+background:#25D366;
+color:white;
+}
+
+.instagram{
+background:#E1306C;
+color:white;
+}
+
+.phone{
+background:gold;
+color:black;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:40px;
+padding:20px;
+background:#111;
+color:#aaa;
+}
+
 </style>
+
 </head>
 
 <body>
@@ -122,78 +167,89 @@ border-radius:10px;
 
 <img src="logo.jpg" class="logo">
 
-<nav>
-<a href="#">Ana Sayfa</a>
-<a href="#projeler">Projeler</a>
-<a href="#iletisim">İletişim</a>
-</nav>
+<h1>CENGİZ LIFE İNŞAAT</h1>
+
+<div class="project-status">
+
+<div class="sold">
+Bu projedeki dairelerimizin tamamı satılmıştır
+</div>
+
+<div class="coming">
+Yeni çıkacak projelerimiz için beklemede kalın
+</div>
+
+</div>
 
 </header>
 
-<section class="hero">
+<!-- SLIDER -->
 
-<h1>CENGİZ LIFE İNŞAAT</h1>
+<div class="slider">
 
-<p>Niğde merkezde modern ve sağlam konut projeleri</p>
+<div class="slides">
+
+<img src="bina1.jpg">
+<img src="bina2.jpg">
+<img src="bina3.jpg">
+
+</div>
+
+</div>
+
+<!-- GALERİ -->
+
+<div class="gallery">
+
+<h2>PROJE FOTOĞRAFLARI</h2>
+
+<div class="gallery-grid">
+
+<img src="bina1.jpg">
+<img src="bina2.jpg">
+<img src="bina3.jpg">
+<img src="bina4.jpg">
+
+</div>
+
+</div>
+
+<!-- HARİTA -->
+
+<div class="map">
+
+<h2 style="color:gold">KONUM</h2>
+
+<iframe
+src="https://www.google.com/maps?q=istanbul&output=embed">
+</iframe>
+
+</div>
+
+<!-- BUTONLAR -->
 
 <div class="buttons">
 
-<a class="btn" href="tel:+905000000000">Telefon</a>
+<a class="btn whatsapp" href="https://wa.me/905000000000">
+WhatsApp
+</a>
 
-<a class="btn" href="https://instagram.com/cengizlife51">Instagram</a>
+<a class="btn instagram" href="#">
+Instagram
+</a>
 
-</div>
-
-</section>
-
-<section class="section">
-
-<h2>Hakkımızda</h2>
-
-<p>
-
-Cengiz Life İnşaat olarak Niğde merkezde modern mimari, sağlam yapı ve kaliteli yaşam alanları inşa ediyoruz.
-
-</p>
-
-</section>
-
-<section class="section projects" id="projeler">
-
-<h2>Projelerimiz</h2>
-
-<img src="proje1.jpg">
-<img src="proje2.jpg">
-<img src="proje3.jpg">
-
-<div class="sold">
-
-Bu projedeki dairelerimizin tamamı satılmıştır
+<a class="btn phone" href="tel:+905000000000">
+Telefon
+</a>
 
 </div>
-
-</section>
-
-<section class="section" id="iletisim">
-
-<h2>Konum</h2>
-
-<iframe src="https://maps.google.com/maps?q=Niğde&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-
-</section>
 
 <footer>
 
-© 2025 Cengiz Life İnşaat  
-Niğde / Türkiye
+© 2025 CENGİZ LIFE İNŞAAT  
+Tüm hakları saklıdır.
 
 </footer>
-
-<a class="whatsapp" href="https://wa.me/905000000000">
-
-WhatsApp
-
-</a>
 
 </body>
 </html>
